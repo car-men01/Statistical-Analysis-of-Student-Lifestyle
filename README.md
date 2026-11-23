@@ -25,7 +25,7 @@ https://www.kaggle.com/datasets/steve1215rogg/student-lifestyle-dataset/data
   - `sleep_group`: Short / Normal / Long (fixed thresholds, e.g. <6, 6–8, >8 h)
   - `activity_group`: Low / Medium / High (tertiles)
   - `gpa_band`: e.g. <3.0, 3.0–3.5, >3.5
-- Save `data/processed/student_lifestyle_clean.csv`.
+- Save `data/student_lifestyle_clean.csv`.
 
 ---
 

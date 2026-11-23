@@ -1,0 +1,39 @@
+=== DATA QUALITY REPORT ===
+Raw shape: 2000 rows x 8 columns
+
+[1] Missing values per column:
+Study_Hours_Per_Day                0
+Extracurricular_Hours_Per_Day      0
+Sleep_Hours_Per_Day                0
+Social_Hours_Per_Day               0
+Physical_Activity_Hours_Per_Day    0
+GPA                                0
+Stress_Level                       0
+-> dropped 0 rows with missing values
+
+[2] Fully duplicated records (ignoring Student_ID): 0
+    Duplicated Student_IDs: 0
+-> dropped 0 duplicate rows
+
+[3] Impossible values: hours <0 or >24: 0, GPA outside 0-4.0: 0
+-> dropped 0 rows; 2000 remain
+
+[4] Sum of the 5 hour columns: min=24.00, mean=24.00, max=24.00
+    Rows summing to 24 h (+/-0.05): 2000 (100.0%)
+    NOTE: hours form a ~24 h budget -> more of one habit means less of another (compositional constraint; mention in limitations / SWOT).
+
+[5] Stress level counts:
+Stress_Level
+Low          297
+Moderate     674
+High        1029
+
+[6] Group sizes:
+  social_group: Low=696, Medium=670, High=634
+  extracurricular_group: Low=706, Medium=633, High=661
+  activity_group: Low=692, Medium=645, High=663
+  sleep_group: Short=402, Normal=816, Long=782
+  gpa_band: <3=712, 3-3.5=1084, >3.5=204
+
+Final shape: 2000 rows x 15 columns (0 rows removed in total)
+Saved: data\student_lifestyle_clean.csv

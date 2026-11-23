@@ -1,0 +1,25 @@
+{
+  "social": {
+    "variable": "Social_Hours_Per_Day",
+    "q33": 1.7,
+    "q67": 3.6
+  },
+  "extracurricular": {
+    "variable": "Extracurricular_Hours_Per_Day",
+    "q33": 1.4,
+    "q67": 2.6
+  },
+  "activity": {
+    "variable": "Physical_Activity_Hours_Per_Day",
+    "q33": 3.0,
+    "q67": 5.3
+  },
+  "sleep": {
+    "short_below": 6.0,
+    "long_above": 8.0
+  },
+  "gpa_band": {
+    "low_below": 3.0,
+    "high_above": 3.5
+  }
+}
